@@ -1,5 +1,7 @@
 'use strict'
 
+/*==========================================*/
+
 export default class ApiFishEye {
     async getDataFishEye() {
         const url = 'Api/FishEye/photographers.json';
