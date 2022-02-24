@@ -17,7 +17,7 @@
 			"country": "France",
 			"tagline": "Capturer des compositions complexes",
 			"price": 250,
-			"portrait": "EllieRoseWilkens.jpg",
+			"portrait": "Assets/Portrait/EllieRoseWilkens.jpg",
 			"alt" : "Ellie-Rose Wilkens portrait"
 		},
 		{
@@ -27,7 +27,7 @@
 			"country": "Canada",
 			"tagline": "Photographe freelance",
 			"price": 500,
-			"portrait": "TracyGalindo.jpg",
+			"portrait": "Assets/Portrait/TracyGalindo.jpg",
 			"alt" : "Tracy Galindo portrait"
 		},
 		{
@@ -37,7 +37,7 @@
 			"country": "Mexico",
 			"tagline": "Toujours aller de l'avant",
 			"price": 350,
-			"portrait": "NabeelBradford.jpg",
+			"portrait": "Assets/Portrait/NabeelBradford.jpg",
 			"alt" : "Nabeel Bradford portrait"
 		},
 		{
@@ -47,7 +47,7 @@
 			"country": "Spain",
 			"tagline": "Je crée des souvenirs",
 			"price": 275,
-			"portrait": "RhodeDubois.jpg",
+			"portrait": "Assets/Portrait/RhodeDubois.jpg",
 			"alt" : "Rhode Dubois portrait"
 		},
 		{
@@ -57,7 +57,7 @@
 			"country": "Germany",
 			"tagline": "Toujours à la recherche de LA photo",
 			"price": 300,
-			"portrait": "MarcelNikolic.jpg",
+			"portrait": "Assets/Portrait/MarcelNikolic.jpg",
 			"alt" : "Marcel Nikolic portrait"
 		}
 	],
