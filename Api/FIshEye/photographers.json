@@ -71,212 +71,212 @@
 		{
 			"id": 342550,
 			"photographerId": 82,
-			"image": "Fashion_Yellow_Beach.jpg",
+			"image": "Assets/Tracy/Fashion_Yellow_Beach.jpg",
 			"alt": "Fashion Yellow Beach",
 			"tags":["fashion"],
 			"likes": 62,
 			"date": "2011-12-08",
 			"price": 55,
-			"photoName": "Fashion Yellow Beach"
+			"photoName": "Yellow Beach"
 		},
 		{
 			"id": 8520927,
 			"photographerId": 82,
-			"photoName": "Fashion Urban Jungle",
-			"image": "Fashion_Urban_Jungle.jpg",
+			"image": "Assets/Tracy/Fashion_Urban_Jungle.jpg",
 			"alt":"Fashion Urban Jungle",
 			"tags":["fashion"],
 			"likes": 11,
 			"date": "2011-11-06",
-			"price": 55
+			"price": 55,
+			"photoName": "Urban Jungle"
 		},
 		{
 			"id": 9025895,
 			"photographerId": 82,
-			"photoName": "Fashion Pattern on a Pattern",
-			"image": "Fashion_Pattern_on_Pattern.jpg",
+			"image": "Assets/Tracy/Fashion_Pattern_on_Pattern.jpg",
 			"alt":"Fashion Pattern on Pattern",
 			"tags":["fashion"],
 			"likes": 72,
 			"date": "2013-08-12",
-			"price": 55
+			"price": 55,
+			"photoName": "Fashion Pattern on a Pattern"
 		},
 		{
 			"id": 9275938,
 			"photographerId": 82,
-			"photoName": "Wedding Gazebo",
-			"image": "Event_WeddingGazebo.jpg",
+			"image": "Assets/Tracy/Event_WeddingGazebo.jpg",
 			"alt":"Event WeddingGazebo",
 			"tags":["events"],
 			"likes": 69,
 			"date": "2018-02-22",
-			"price": 55
+			"price": 55,
+			"photoName": "Wedding Gazebo"
 		},
 		{
 			"id": 2053494,
 			"photographerId": 82,
-			"photoName": "Sparkles",
-			"image": "Event_Sparklers.jpg",
+			"image": "Assets/Tracy/Event_Sparklers.jpg",
 			"alt":"Event Sparklers",
 			"tags":["events"],
 			"likes": 2,
 			"date": "2020-05-25",
-			"price": 55
+			"price": 55,
+			"photoName": "Sparkles"
 		},
 		{
 			"id": 7324238,
 			"photographerId": 82,
-			"photoName": "18th Anniversary",
-			"image": "Event_18thAnniversary.jpg",
+			"image": "Assets/Tracy/Event_18thAnniversary.jpg",
 			"alt":"Event 18th Anniversary",
 			"tags":["events"],
 			"likes": 33,
 			"date": "2019-06-12",
-			"price": 55
+			"price": 55,
+			"photoName": "18th Anniversary"
 		},
 		{
 			"id": 8328953,
 			"photographerId": 82,
-			"photoName": "Wooden sculpture of a horse",
-			"video": "Art_Wooden_Horse_Sculpture.mp4",
+			"video": "Assets/Tracy/Art_Wooden_Horse_Sculpture.mp4",
 			"alt":"Art Wooden Horse Sculpture",
 			"tags":["art"],
 			"likes": 24,
 			"date": "2011-12-08",
-			"price": 100
+			"price": 100,
+			"photoName": "Wooden sculpture of a horse"
 		  },
 		{
 			"id": 7502053,
 			"photographerId": 82,
-			"photoName": "Triangle Man",
-			"image": "Art_Triangle_Man.jpg",
+			"image": "Assets/Tracy/Art_Triangle_Man.jpg",
 			"alt":"Art Triangle Man",
 			"tags":["art"],
 			"likes": 88,
 			"date": "2007-05-07",
-			"price": 55
+			"price": 55,
+			"photoName": "Triangle Man"
 		},
 		{
 			"id": 8523492,
 			"photographerId": 82,
-			"photoName": "Purple Tunnel",
-			"image": "Art_Purple_light.jpg",
+			"image": "Assets/Tracy/Art_Purple_light.jpg",
 			"alt":"Art Purple light",
 			"tags":["art"],
 			"likes": 24,
 			"date": "2018-05-05",
-			"price": 55
+			"price": 55,
+			"photoName": "Purple Tunnel"
 		},
 		{
 			"id": 75902334,
 			"photographerId": 82,
-			"photoName": "Art Mine",
-			"image": "Art_Mine.jpg",
+			"image": "Assets/Tracy/Art_Mine.jpg",
 			"alt":"Art Mine",
 			"tags":["art"],
 			"likes": 75,
 			"date": "2019-11-25",
-			"price": 55
+			"price": 55,
+			"photoName": "Art Mine"
 		},
 
 		{
 			"id": 73852953,
 			"photographerId": 925,
-			"photoName": "8 Rows",
 			"image": "Assets/Rhode/Sport_2000_with_8.jpg",
 			"alt":"Sport 2000 with 8",
 			"tags":["sport"],
 			"likes": 52,
 			"date": "2013-02-30",
-			"price": 70
+			"price": 70,
+			"photoName": "8 Rows"
 		},
 		{
 			"id": 92758372,
 			"photographerId": 925,
-			"photoName": "Fashion Wings",
 			"image": "Assets/Rhode/Fashion_Wings.jpg",
 			"alt":"Fashion Wings",
 			"tags":["fashion"],
 			"likes": 58,
 			"date": "2018-07-17",
-			"price": 70
+			"price": 70,
+			"photoName": "Fashion Wings"
 		},
 		{
 			"id": 32958383,
 			"photographerId": 925,
-			"photoName": "Melody Red on Stripes",
 			"image": "Assets/Rhode/Fashion_Melody_Red_on_Stripes.jpg",
 			"alt":"Fashion Melody Red on Stripes",
 			"tags":["fashion"],
 			"likes": 11,
 			"date": "2019-08-12",
-			"price": 70
+			"price": 70,
+			"photoName": "Melody Red on Stripes"
 		},
 		{
 			"id": 928587383,
 			"photographerId": 925,
-			"photoName": "Venture Conference",
 			"image": "Assets/Rhode/Event_VentureConference.jpg",
 			"alt":"Event VentureConference",
 			"tags":["events"],
 			"likes": 2,
 			"date": "2019-01-02",
-			"price": 70
+			"price": 70,
+			"photoName": "Venture Conference"
 		},
 		{
 			"id": 725639493,
 			"photographerId": 925,
-			"photoName": "Product Pitch",
 			"image": "Assets/Rhode/Event_ProductPitch.jpg",
 			"alt":"Event ProductPitch",
 			"tags":["events"],
 			"likes": 3,
 			"date": "2019-05-20",
-			"price": 70
+			"price": 70,
+			"photoName": "Product Pitch"
 		},
 		{
 			"id": 23394384,
 			"photographerId": 925,
-			"photoName": "Musical Festival Keyboard",
 			"image": "Assets/Rhode/Event_KeyboardCheck.jpg",
 			"alt":"Event KeyboardCheck",
 			"tags":["events"],
 			"likes": 52,
 			"date": "2019-07-18",
-			"price": 70
+			"price": 70,
+			"photoName": "Musical Festival Keyboard"
 		},
 		{
 			"id": 87367293,
 			"photographerId": 925,
-			"photoName": "Musical Festival Singer",
 			"image": "Assets/Rhode/Event_Emcee.jpg",
 			"alt":"Musical Festival Singer",
 			"tags":["events"],
 			"likes": 23,
 			"date": "2018-02-22",
-			"price": 70
+			"price": 70,
+			"photoName": "Musical Festival Singer"
 		},
 		{
 			"id": 593834784,
 			"photographerId": 925,
-			"photoName": "Animal Majesty",
 			"image": "Assets/Rhode/Animals_Majesty.jpg",
 			"alt":"Animals Majesty",
 			"tags":["animals"],
 			"likes": 52,
 			"date": "2017-03-13",
-			"price": 70
+			"price": 70,
+			"photoName": "Animal Majesty"
 		},
 		{
 			"id": 83958935,
-			"photographerId": 925,
-			"photoName": "Cute puppy on sunset",
+			"photographerId": 925,	
 			"video": "Assets/Rhode/Animals_Puppiness.mp4",
 			"alt":"Cute puppy on sunset",
 			"tags":["animals"],
 			"likes": 52,
 			"date": "2016-06-12",
-			"price": 70
+			"price": 70,
+			"photoName": "Cute puppy on sunset"
 		},
 		{
 			"id": 394583434,
