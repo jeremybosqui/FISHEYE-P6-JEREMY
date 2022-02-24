@@ -14,23 +14,28 @@
   <body>
     <!--Header Banner-->
     <header role="banner">
-      <!--rendre le logo d'accueil clickable-->
-        <a href="index.html" title="HomePage"><img src="Assets/logo.png" class="logo" alt="FishEye Home Page"/></a>
-        <!--Mise en place de la navigation avec les tags qui permettront au click de les rediriger vers les photographes correspondant-->
-        <nav role="navigation" aria-label="photographers category" class="">
-          <ul>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          <a href="#"><li data-filter="portrait"></li></a>
-          </ul>
-        </nav>
-        <h1>Nos photographes</h1>
+        <!--rendre le logo d'accueil clickable-->
+        <a href="index.html" title="HomePage">
+          <img src="Assets/logo.png" class="logo" 
+          alt="FishEye Home Page"/>
+        </a>
+        <!--Mise en place de la navigation avec les tags qui permettront au click 
+          de les rediriger vers les photographes correspondant-->
+          <nav role="navigation" aria-label="photographers category" class="filters">
+                <ul>
+                      <a href="#"><li data-filter="portrait"></li></a>
+                      <a href="#"><li data-filter="art"></li></a>
+                      <a href="#"><li data-filter="architecture"></li></a>
+                      <a href="#"><li data-filter="travel"></li></a>
+                      <a href="#"><li data-filter="events"></li></a>
+                      <a href="#"><li data-filter="sport"></li></a>
+                      <a href="#"><li data-filter="animals"></li></a>
+                      <a href="#"><li data-filter="fashion"></li></a>
+                </ul>
+          </nav>
+          <h1>Nos photographes</h1>
     </header>
+    <!---->
     <main id="main">
         <div class="photographer_section"></div>
     </main>
