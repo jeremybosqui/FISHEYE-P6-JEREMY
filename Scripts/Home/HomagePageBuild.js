@@ -16,15 +16,14 @@ export default class HomePageBuild {
                 <img src="${photographe.portrait}" alt"${photographe.alt}">
                 <h2 class"name">${photographe.name}</h2>
             </a>
-            
-            
-            
-            
-            
-            
-            
-            
-            `
+            <p class="location">${photographe.city}, ${photographe.country}</p>
+            <p class="tagLine">${photographe.tagline}</p>
+            <p class="price">${photographe.price}€/jour</p>
+            <ul class="filter">${photographe.tags.map (tag => `<li data-filter="${tag}">#${tag}</li>`).join('')}
+            </ul>`
+
+            sectionPhotographers.appendChild(articlePhotographers);
+            articlePhotographers.innerHTML = templatePhotographer;
         })
 
 
