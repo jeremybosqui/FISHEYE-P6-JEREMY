@@ -1,6 +1,7 @@
 'use strict'
 /*====================================================*/
-
+import Filter from "./filterTags.js";
+import Scroll from "./scroll.js";
 
 // utilisation d'export default pour n'exporter qu'un seul objet ou variable qui est le builder de la page d'accueil
 export default class HomePageBuild {
@@ -26,6 +27,7 @@ export default class HomePageBuild {
             articlePhotographers.innerHTML = templatePhotographer;
         })
 
-
+        new Filter().filterTags();
+        new Scroll().scrollBtn();
     }
 }
