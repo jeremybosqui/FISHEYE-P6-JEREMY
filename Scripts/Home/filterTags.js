@@ -48,6 +48,16 @@ export default class Filter {
         return filters.length == intersection.length;
     }
 
+    // afficher ou masquer les articles avec la fonction suivante
 
+    sortDomArticle(articles) {
+        articles.forEach((article) => {
+            if (this.ownAllFilters(article)) {
+                article.style.display = 'block';
+            } else {
+                article.style.display = 'none';
+            }
+        });
+    }
 
 }
