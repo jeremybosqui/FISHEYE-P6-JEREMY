@@ -1,4 +1,4 @@
-/* PH WORKS MEDIAS */
+/* photographer section works media */
 #ph-works {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +53,7 @@
     font-weight: 400;
 }
 
+/*========== responsive media desktop  =========*/
 @media (min-width: 1300px) {
     #ph-works {
         justify-content: space-between;
@@ -69,4 +70,4 @@
         height: 18.75rem;
         width: 21.875rem;
     }
-}
+} /*============   FIN   ============*/
