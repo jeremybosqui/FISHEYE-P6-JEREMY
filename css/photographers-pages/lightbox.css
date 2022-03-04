@@ -67,7 +67,7 @@ aside article:nth-last-child(1) {
     font-size: 1rem;
     font-weight: 600;
 }
-
+/*==============   responsive media tablette  ========*/
 @media (min-width: 600px) {
     .close-lightbox-icon {
         cursor: pointer;
@@ -91,4 +91,4 @@ aside article:nth-last-child(1) {
         left: 23%;
         padding: .5rem 0;
     }
-}
+} /*==============  FIN   =============*/
