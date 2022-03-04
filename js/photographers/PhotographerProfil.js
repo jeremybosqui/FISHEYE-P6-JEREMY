@@ -1,6 +1,8 @@
 'use strict'
 /*==============*/
 
+import Modal from "./Modal";
+import Form from "./Form";
 
 
 export default class PhotographerProfil {
