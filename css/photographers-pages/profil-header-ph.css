@@ -1,4 +1,4 @@
-/* HEADER PH PROFIL */
+/* header du profil */
 .ph-city {
     color: #901c1c;
     font-size: .9em;
@@ -65,7 +65,7 @@
     background-color: #901C1C;
     color: #fff;
 }
-
+/*======== responsive desktop ajustement du bouton  ===========*/
 @media (max-width: 1200px) {
     .ph-profil button {
         left: 0;
@@ -74,8 +74,9 @@
         right: 0;
         z-index: 1;
     }
-}
+}/*===============    FIN  ==========*/
 
+/*========= responsive desktop ecran plus grand que 900px ajustement bouton + profil =========*/
 @media (min-width: 1200px) {
     .ph-profil {
         background-color: #FAFAFA;
@@ -88,8 +89,9 @@
         position: absolute;
         top: 9.8rem;
     }
-}
+}  /*======== FIN     ================*/ 
 
+/*================= responsive desktop   =============*/
 @media (min-width: 900px) {
     .ph-city {
         font-size: 20px;
@@ -117,4 +119,4 @@
         font-size: 15px;
         margin-bottom: 1rem;
     }
-}
+} /*======== FIN  ===========*/
