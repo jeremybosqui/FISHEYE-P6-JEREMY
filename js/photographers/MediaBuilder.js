@@ -1,7 +1,7 @@
 'use strict'
 /*==============*/
-
-
+import GalleryFactory from "../Factory/GalleryFactory";
+import LikeSubscriber from './Likes';
 
 export default class MediaBuilder {
     // appel de GalleryFactory pour creer la section media  avec 'Like' function et la box likes and price
