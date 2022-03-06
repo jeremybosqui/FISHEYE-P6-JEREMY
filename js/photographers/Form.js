@@ -19,7 +19,7 @@ export default class Form {
                 this.checkEmail(email) &&
                 this.checkMessage(message);
 
-            if (isValid) { 
+            if (isValid) {
                 firstName.style.border = 'none';
                 lastName.style.border = 'none';
                 email.style.border = 'none';
