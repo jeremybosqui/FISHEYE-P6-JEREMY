@@ -34,7 +34,7 @@ export default class Filter {
         return filterSelected;
     }
 
-    // compare/check if 'filters' has the same value as the 'article' class
+    // comparer / check si 'filters' a la meme valeur que la class 'article'
     ownAllFilters(article) {
         let filters = this.getActiveFilters();
         let classValue = article.classList.value;
@@ -46,7 +46,7 @@ export default class Filter {
         return filters.length == intersection.length;
     }
 
-    // SHOW OR HIDE ARTICLES
+    // Afficher ou cacher les articles
     sortDomArticle(articles) {
         articles.forEach((article) => {
             if (this.ownAllFilters(article)) {
