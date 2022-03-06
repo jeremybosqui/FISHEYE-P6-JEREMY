@@ -1,7 +1,7 @@
 'use strict'
 /*=============*/
-import MediaFactory from './MediaFactory';
-import Lightbox from '../photographers/LightBox';
+import MediaFactory from './MediaFactory.js';
+import Lightbox from '../photographers/LightBox.js';
 
 export default class GalleryFactory {
     constructor() {

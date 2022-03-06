@@ -1,8 +1,8 @@
 'use strict'
 /*==============*/
 
-import Modal from "./Modal";
-import Form from "./Form";
+import Modal from './Modal.js';
+import Form from './Form.js';
 
 
 export default class PhotographerProfil {
