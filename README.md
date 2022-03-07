@@ -3,4 +3,4 @@ projet Fisheye avec API developper en JS
 
 Rien à installer il suffit de lancer le projet via le répo forker
 
-Langages utilisés >>> CSS / JS / HTML 
+Langages utilisés ⏩ CSS / JS / HTML 
