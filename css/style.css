@@ -10,13 +10,13 @@ body {
     font-family: 'DM Sans', sans-serif;
 }
 
-nav ul li:hover,
-li.actived { /*============  hover mise en place sur li qui sont active  pour l'accessibilite entre autre ============*/
+nav #ul .li:hover,
+.li.actived { /*============  hover mise en place sur li qui sont active  pour l'accessibilite entre autre ============*/
     background-color: #901C1C;
     color: #fff;
 }
 
-ul li {
+ .li {
     border: .5px solid #C4C4C4;
     border-radius: 11px;
     color: #901C1C;

@@ -19,7 +19,7 @@ header img {
     width: 8rem;
 }
 
-header nav ul {
+header nav #ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;

@@ -5,7 +5,7 @@
 export default class Filter {
     // initialiser la fonction
     filterTags() {
-        let filtres = document.querySelector('ul');
+        let filtres = document.querySelector('#ul');
         let articles = document.querySelectorAll('.articlePh');
 
         // ajouter l'eventlistener lors du click
@@ -24,7 +24,7 @@ export default class Filter {
 
     // retrieve the filters with the 'actived' class and place them in the 'filterSelected' array
     getActiveFilters() {
-        let currentFilters = document.querySelectorAll('ul li.actived');
+        let currentFilters = document.querySelectorAll('#ul .li.actived');
         let filterSelected = [];
 
         currentFilters.forEach(function (currentFilter) {
