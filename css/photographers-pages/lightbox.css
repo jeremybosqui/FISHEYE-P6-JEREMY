@@ -50,7 +50,7 @@
     top: 48%;
 }
 
-aside {
+.lightBox {
     background-color: #fff;
     display: none;
     height: 200vw;
@@ -61,7 +61,7 @@ aside {
     z-index: 2;
 }
 
-aside article:nth-last-child(1) {
+.lightBox .article:nth-last-child(1) {
     color: #901C1C;
     font-family: sans-serif;
     font-size: 1rem;
@@ -87,7 +87,7 @@ aside article:nth-last-child(1) {
         top: 48%;
     }
 
-    aside article:nth-last-child(1) {
+    aside .article:nth-last-child(1) {
         left: 23%;
         padding: .5rem 0;
     }
