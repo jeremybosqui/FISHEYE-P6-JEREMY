@@ -10,13 +10,13 @@ export default class GalleryFactory {
 
     // creer la gallerie contenant les differentes images et videos ainsi que la lightbox
     builder(dataMedia) {
-        const id = window.location.search.split('id=')[1];
+        const id = window.location.search.split('id=')[1]; //
         let mediaFactory = new MediaFactory();
-        let currentMedia = [];
-        let currentMediaName = [];
+        let currentMedia = []; // initier un tableau vide
+        let currentMediaName = []; // initier un tableau vide
 
         dataMedia.forEach(element => {
-            if (id == element.photographerId) {
+            if (id == element.photographerId) { // creer la condition pour que l'ID soit bien egal à celui des photographers dans le ficher data.json
                 let sectionPhWorks = document.getElementById('ph-works');
                 let articlePhWork = document.createElement("article");
                 let mediaHTML = mediaFactory.renderMedia(element);

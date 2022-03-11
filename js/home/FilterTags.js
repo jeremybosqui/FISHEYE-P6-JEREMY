@@ -22,16 +22,16 @@ export default class Filter {
         });
     }
 
-    // retrieve the filters with the 'actived' class and place them in the 'filterSelected' array
+    // recupere le filters avec la classe 'actived'  et les placer dans le tableau 'filterSelected'
     getActiveFilters() {
         let currentFilters = document.querySelectorAll('#ul .li.actived');
-        let filterSelected = [];
+        let filterSelected = []; // initier un tableau vide afin de stocker filters
 
         currentFilters.forEach(function (currentFilter) {
-            filterSelected.push(currentFilter.getAttribute("data-filter"));
+            filterSelected.push(currentFilter.getAttribute("data-filter")); // push data-filter afin de le stocker dans le tableau filterselected
         });
 
-        return filterSelected;
+        return filterSelected; // faire un return
     }
 
     // comparer / check si 'filters' a la meme valeur que la class 'article'
