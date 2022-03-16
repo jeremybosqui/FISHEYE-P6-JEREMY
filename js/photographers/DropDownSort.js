@@ -5,19 +5,19 @@ import GalleryFactory from '../Factory/GalleryFactory.js';
 
 
 export default class DropDownMenu {
-    // evenemtn au clikc pour afficher / fermer le dropdown menu
+    // evenement au click pour afficher / fermer le dropdown menu
     dropDown(data) {
         let arrowOpen = document.getElementsByClassName('sort-btn');
         let arrowClose = document.getElementsByClassName('arrow-up-close');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
 
-        if (arrowOpen) { // afficher le menu
+        if (arrowOpen) { // afficher le contenu du menu
             arrowOpen[0].addEventListener('click', () => {
                 hiddenSort[0].style.display = 'block';
             });
             this.sortMedias(data);
         }
-        if (arrowClose) { // fermer le menu
+        if (arrowClose) { // fermer le contenu du menu
             arrowClose[0].addEventListener('click', () => {
                 hiddenSort[0].style.display = "none";
             });
@@ -27,7 +27,7 @@ export default class DropDownMenu {
     // initialiser les differentes sortes de facon de trier : DATE / POPULARITE / TITRE
     // j'utilise la méthode sort() qui me permet de faire un tri des valeurs en les convertissant en chaine de caracteres et j'y ajoute une fonction de comparaison qui decrit comment les elements seront compares et l'ordre dans lequel ils seront affichés
     sortMedias(data) {
-        let mediaArraySort = [];
+        let mediaArraySort = []; // initier tableau vide
         let media = data.media;
         let btnSort = document.querySelector('.sort-btn');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
