@@ -39,20 +39,21 @@ export default class DropDownMenu {
                 btnSort.innerHTML = `Popularité`;
 
                 mediaArraySort = media.sort((a, b) => { // tri par POPULARITE
-                    return b.likes - a.likes
+                    return b.likes - a.likes // tri par nombre de likes decroissant , plus il a de likes plus il doit etre placé en avant du coup le tri est fait du plus grand au plus petit
                 })
 
             } else if (index == 1) {
                 btnSort.innerHTML = `Date`;
 
                 mediaArraySort = media.sort((a, b) => { // tri par DATE
-                    return new Date(a.date).valueOf() - new Date(b.date).valueOf();
+                    return new Date(a.date).valueOf() - new Date(b.date).valueOf(); // tri par date si la date est tres recente alors elle sera mise en premier et inversement
                 })
 
             } else if (index == 2) {
                 btnSort.innerHTML = `Titre`;
 
                 mediaArraySort = media.sort((a, b) => { // tri par TITRE
+                    // comparer les noms des photos et ranger dans l'ordre alphabetique
                     if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
                         return -1;
                     } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase()) {

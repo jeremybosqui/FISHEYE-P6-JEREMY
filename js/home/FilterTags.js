@@ -38,21 +38,21 @@ export default class Filter {
     ownAllFilters(article) {
         let filters = this.getActiveFilters();
         let classValue = article.classList.value;
-        let classes = classValue.split(' ');
-        let intersection = filters.filter(
+        let classes = classValue.split(' ');// methode split qui me permet de diviser une chaîne de caractères en une liste ordonnée de sous-chaînes, place ces sous-chaînes dans un tableau et retourne le tableau
+        let intersection = filters.filter( // la methode filter me permet de créer un nouveau tableau avec tous les éléments qui réussissent le test implémenté par ma fonction
             x => classes.includes(x)
         );
 
-        return filters.length == intersection.length;
+        return filters.length == intersection.length; // la condition qui me permet d'utiliser la methode filtre afin de verifier que les elements correspondent
     }
 
     // Afficher ou cacher les articles
     sortDomArticle(articles) {
         articles.forEach((article) => {
             if (this.ownAllFilters(article)) {
-                article.style.display = 'block';
+                article.style.display = 'block';// affiche
             } else {
-                article.style.display = 'none';
+                article.style.display = 'none';// n'affiche pas
             }
         });
     }
