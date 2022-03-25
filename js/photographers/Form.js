@@ -3,7 +3,7 @@
 
 export default class Form {
     fields() {
-        // initialiser const dom pour le formulaire 
+        // initialiser const dom pour le formulaire
         const form = document.getElementById('contact-form');
         const firstName = document.getElementById('first-name');
         const lastName = document.getElementById('last-name');
@@ -13,19 +13,20 @@ export default class Form {
 
         // envoie formul , prevent comportement par default
         form.addEventListener('submit', (e) => {
-            e.preventDefault(); 
+            e.preventDefault();
             let isValid = this.checkNames(firstName, regex) &&
                 this.checkNames(lastName, regex) &&
                 this.checkEmail(email) &&
                 this.checkMessage(message);
-
+            // si le formulaire est valide alors excute isValid
             if (isValid) {
                 firstName.style.border = 'none';
                 lastName.style.border = 'none';
                 email.style.border = 'none';
                 message.style.border = 'none';
                 this.consoleMessageValid(firstName, lastName, email, message);
-                document.getElementById('contact-form').reset();
+                document.getElementById('contact-form').reset(); //reset le formulaire si il est valide
+                //sinon execute la fonction errorVerification qui genere les messages d'erreurs
             } else {
                 this.errorVerification(firstName, lastName, email, message, regex);
             }
@@ -73,8 +74,9 @@ export default class Form {
         return false;
     }
     // verifier si message valid / pas valid
+    // generer le border green ou red selon la validité du message
     checkMessage(elt) {
-        if (elt.value.trim() === '' || elt.value.trim() == null) {
+        if (elt.value.trim() === '' || elt.value.trim() == null) { // La méthode trim() permet de retirer les blancs en début et fin de chaîne. Les blancs considérés sont les caractères d'espacement (espace, tabulation, espace insécable, etc.)
             elt.parentElement.setAttribute('data-error-visible', 'true');
             elt.style.border = '2px solid #e54858';
             return false;
