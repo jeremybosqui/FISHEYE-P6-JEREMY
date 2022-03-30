@@ -9,8 +9,8 @@ export default class PhotographerProfil {
     // verifier sur quelle page se trouve l'utilisateur, si la position (location) correspond à photographer's "id", creer photographer's 'Profile' section
     displayPhotographerProfil(data) {
         const photographersData = data.photographers;
-        const id = window.location.search.split('id=')[1];
-        const photographers = !id ? photographersData : photographersData.filter(photographer => photographer.id == id);
+        const id = window.location.search.split('id=')[1]; // methode split qui me permet de diviser une chaîne de caractères en une liste ordonnée de sous-chaînes, place ces sous-chaînes dans un tableau et retourne le tableau
+        const photographers = !id ? photographersData : photographersData.filter(photographer => photographer.id == id); // La méthode filter() crée et retourne un nouveau tableau contenant tous les éléments du tableau d'origine qui remplissent une condition déterminée par la fonction callback
         const sectionPhotographerProfil = document.getElementById('ph-profil-header');
         const templatePhotographerProfil = `
             <article aria-label="Photographer Profil" class="ph-profil">

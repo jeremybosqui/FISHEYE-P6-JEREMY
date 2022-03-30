@@ -2,7 +2,6 @@
 /*======================*/
 
 
-
 export default class Modal {
     // Evenement launch/close la modal au click sur le 'contact me' bouton
     modal(data) {
@@ -16,22 +15,26 @@ export default class Modal {
         if (closeBtn) {
             closeBtn[0].addEventListener('click', this.closeModal);
         }
+        // accessibilite via la touche escape du clavier
+        let modalbg = document.getElementById("form-dialog");
+        window.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+              modalbg.style.display = 'none'
+            }
+          })
     }
 
     // lancer la modal
     launchModal() {
         let modalbg = document.getElementById("form-dialog");
-
         modalbg.style.display = 'block';
     }
 
     // fermer la modal
     closeModal() {
         let modalbg = document.getElementById("form-dialog");
-
         modalbg.style.display = 'none';
     }
-
     // afficher le nom des differents photographe en recuperant le dada id , l'afficher dans le titre de la modal
     formPhName(data) {
         const id = window.location.search.split('id=')[1];

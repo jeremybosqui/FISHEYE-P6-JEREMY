@@ -80,13 +80,13 @@ export default class LightBox {
             let lightBoxName = document.getElementById('works-lightbox-name');
 
             // si l'utilisateur appuis sur echap ferme la modal
-            if (key.code == "Escape") {
+            if (key.code === "Escape") {
                 let lightBox = document.getElementById('works-lightbox');
                 lightBox.style.display = 'none';
             }
 
-            // si il appuis sur la fleche droite du clavier l'image est la suivante 
-            else if (key.code == "ArrowRight") {
+            // si il appuis sur la fleche droite du clavier l'image est la suivante
+            else if (key.code === "ArrowRight") {
                 this.currentIndex += 1;
 
                 if (this.currentIndex > currentMediaName.length - 1) {
@@ -101,7 +101,7 @@ export default class LightBox {
             }
 
             // si il appuis sur la fleche gauche du clavier l'image est la precedente
-            else if (key.code == "ArrowLeft") {
+            else if (key.code === "ArrowLeft") {
                 this.currentIndex -= 1;
 
                 if (this.currentIndex < 0) {
