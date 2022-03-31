@@ -40,7 +40,7 @@ export default class GalleryFactory {
                 articlePhWork.classList.add("ph-work-elt");
                 this.totalLike += parseInt(element.likes); // utilisation de parseInt qui va convertir la chaine de caractere en un nombre entier qui correspond au nombre de like de l'image
                 currentMedia.push(mediaHTML.outerHTML); // push les donner initier dans le tableau creer ci-dessus currentMedia
-                currentMediaName.push(element.photoName); // push les donner initier dans le tableau currentMediaName 
+                currentMediaName.push(element.photoName); // push les donner initier dans le tableau currentMediaName
                 (new Lightbox())
                 .init(currentMedia, currentMediaName)
             }

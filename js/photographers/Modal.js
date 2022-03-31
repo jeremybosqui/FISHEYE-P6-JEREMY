@@ -17,8 +17,8 @@ export default class Modal {
         }
         // accessibilite via la touche escape du clavier
         let modalbg = document.getElementById("form-dialog");
-        window.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
               modalbg.style.display = 'none'
             }
           })

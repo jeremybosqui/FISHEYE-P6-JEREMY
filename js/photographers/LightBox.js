@@ -15,11 +15,24 @@ export default class LightBox {
             let src = currentMedia[index];
             let nameSrc = currentMediaName[index];
             this.currentIndex = index;
-
-            document.getElementById('works-lightbox').style.display = 'block';
+            let lightBox = document.getElementById('works-lightbox');
+            lightBox.style.display = 'block';
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;
         }))
+        let lightBox = document.getElementById('works-lightbox');
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                lightBox.style.display = 'block';
+            }
+        })
+        /* code non fonctionnel car il ouvre la modal et la lightbox quand on click sur entrer , code à retravailler en l'état n'est pas bon
+        let AccesLight = document.getElementById("works-lightbox");
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+              AccesLight.style.display = 'block'
+            }
+          }) */
         this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
         this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);
         this.close();
@@ -69,7 +82,6 @@ export default class LightBox {
     close() {
         document.querySelector('.close-lightbox-icon').addEventListener('click', () => {
             let lightbox = document.getElementById('works-lightbox');
-
             lightbox.style.display = 'none';
         })
     }
@@ -80,7 +92,7 @@ export default class LightBox {
             let lightBoxName = document.getElementById('works-lightbox-name');
 
             // si l'utilisateur appuis sur echap ferme la modal
-            if (key.code === "Escape") {
+            if (key.code === "Escape" || key.code === "Esc"|| key.code === "Echape") {
                 let lightBox = document.getElementById('works-lightbox');
                 lightBox.style.display = 'none';
             }
