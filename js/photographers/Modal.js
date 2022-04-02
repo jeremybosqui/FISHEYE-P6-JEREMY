@@ -12,6 +12,14 @@ export default class Modal {
             modalBtn.addEventListener('click', this.launchModal);
             this.formPhName(data);
         }
+        if (modalBtn) {
+            modalBtn.addEventListener('keydown',(e) => {
+                if (e.key === 'Enter') {
+                    this.launchModal();
+                    this.formPhName(data);
+                }
+            })
+        }
         if (closeBtn) {
             closeBtn[0].addEventListener('click', this.closeModal);
         }
@@ -23,7 +31,6 @@ export default class Modal {
             }
           })
     }
-
     // lancer la modal
     launchModal() {
         let modalbg = document.getElementById("form-dialog");

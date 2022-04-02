@@ -13,7 +13,7 @@ export default class DropDownMenu {
 
         if (arrowOpen) { // afficher le contenu du menu
             arrowOpen[0].addEventListener('click', () => {
-                hiddenSort[0].style.display = 'block';
+                hiddenSort[0].style.display = "block";
             });
             this.sortMedias(data);
         }
@@ -21,6 +21,14 @@ export default class DropDownMenu {
             arrowClose[0].addEventListener('click', () => {
                 hiddenSort[0].style.display = "none";
             });
+        }
+        // accessibilite clavier echape permet de fermet le contenu du menu
+        if (arrowClose) {
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' || e.key === 'Echape' || e.key === 'Esc') {
+                    hiddenSort[0].style.display = "none";
+                }
+            })
         }
     }
 
@@ -32,36 +40,68 @@ export default class DropDownMenu {
         let btnSort = document.querySelector('.sort-btn');
         let hiddenSort = document.getElementsByClassName('hidden-sort');
         let sortBtn = Array.from(document.getElementsByClassName('sort')); // array.from() me permet de convertir ma NodeList en tableau
+        // accessibilite clavier validation du filtre via la touche entrer
+        sortBtn.forEach((btn, index) => btn.addEventListener('keydown', (e) => { // je creer un gestionnaire d'event click à chaque btn
+            if (e.key == 'Enter' || e.key == 'Entr' || e.key == 'Etr' || e.key == 'Entrer') {
+                hiddenSort[0].style.display = "none";
+                if (index == 0) {
+                    btnSort.innerHTML = `Popularité`;
 
-        sortBtn.forEach((btn, index) => btn.addEventListener('click', () => { // je creer un gestionnaire d'event click à chaque btn
-            hiddenSort[0].style.display = "none";
-            if (index == 0) {
-                btnSort.innerHTML = `Popularité`;
+                    mediaArraySort = media.sort((a, b) => { // tri par POPULARITE
+                        return b.likes - a.likes // tri par nombre de likes decroissant , plus il a de likes plus il doit etre placé en avant du coup le tri est fait du plus grand au plus petit
+                    })
 
-                mediaArraySort = media.sort((a, b) => { // tri par POPULARITE
-                    return b.likes - a.likes // tri par nombre de likes decroissant , plus il a de likes plus il doit etre placé en avant du coup le tri est fait du plus grand au plus petit
-                })
+                } else if (index == 1) {
+                    btnSort.innerHTML = `Date`;
 
-            } else if (index == 1) {
-                btnSort.innerHTML = `Date`;
+                    mediaArraySort = media.sort((a, b) => { // tri par DATE
+                        return new Date(a.date).valueOf() - new Date(b.date).valueOf(); // tri par date si la date est tres recente alors elle sera mise en premier et inversement
+                    })
 
-                mediaArraySort = media.sort((a, b) => { // tri par DATE
-                    return new Date(a.date).valueOf() - new Date(b.date).valueOf(); // tri par date si la date est tres recente alors elle sera mise en premier et inversement
-                })
+                } else if (index == 2) {
+                    btnSort.innerHTML = `Titre`;
 
-            } else if (index == 2) {
-                btnSort.innerHTML = `Titre`;
-
-                mediaArraySort = media.sort((a, b) => { // tri par TITRE
-                    // comparer les noms des photos et ranger dans l'ordre alphabetique
-                    if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
-                        return -1;
-                    } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase()) {
-                        return 1;
-                    }
-                })
+                    mediaArraySort = media.sort((a, b) => { // tri par TITRE
+                        // comparer les noms des photos et ranger dans l'ordre alphabetique
+                        if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
+                            return -1;
+                        } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase()) {
+                            return 1;
+                        }
+                    })
+                }
+                this.displaySortMedia(mediaArraySort);
             }
-            this.displaySortMedia(mediaArraySort);
+        }));
+        sortBtn.forEach((btn, index) => btn.addEventListener('click', () => { // je creer un gestionnaire d'event click à chaque btn
+                hiddenSort[0].style.display = "none";
+                if (index == 0) {
+                    btnSort.innerHTML = `Popularité`;
+
+                    mediaArraySort = media.sort((a, b) => { // tri par POPULARITE
+                        return b.likes - a.likes // tri par nombre de likes decroissant , plus il a de likes plus il doit etre placé en avant du coup le tri est fait du plus grand au plus petit
+                    })
+
+                } else if (index == 1) {
+                    btnSort.innerHTML = `Date`;
+
+                    mediaArraySort = media.sort((a, b) => { // tri par DATE
+                        return new Date(a.date).valueOf() - new Date(b.date).valueOf(); // tri par date si la date est tres recente alors elle sera mise en premier et inversement
+                    })
+
+                } else if (index == 2) {
+                    btnSort.innerHTML = `Titre`;
+
+                    mediaArraySort = media.sort((a, b) => { // tri par TITRE
+                        // comparer les noms des photos et ranger dans l'ordre alphabetique
+                        if (a.photoName.toLowerCase() < b.photoName.toLowerCase()) {
+                            return -1;
+                        } else if (a.photoName.toLowerCase() > b.photoName.toLowerCase()) {
+                            return 1;
+                        }
+                    })
+                }
+                this.displaySortMedia(mediaArraySort);
         }));
     }
 

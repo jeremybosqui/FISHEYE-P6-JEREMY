@@ -20,19 +20,14 @@ export default class LightBox {
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;
         }))
+        // fonctionne partiellement
+        /*
         let lightBox = document.getElementById('works-lightbox');
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') {
                 lightBox.style.display = 'block';
             }
-        })
-        /* code non fonctionnel car il ouvre la modal et la lightbox quand on click sur entrer , code à retravailler en l'état n'est pas bon
-        let AccesLight = document.getElementById("works-lightbox");
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter') {
-              AccesLight.style.display = 'block'
-            }
-          }) */
+        })*/
         this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
         this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);
         this.close();
@@ -87,10 +82,21 @@ export default class LightBox {
     }
     // initialiser le coté accessible de la lightbox avec la navigation via les touches du clavier
     keyboard(currentMedia, currentMediaName) {
+        // non fonctionnel
+        /*let Openlight = document.getElementById('works-lightbox');
+        Openlight.addEventListener('keydown', (b) => {
+            if(b.key === 'Enter') {
+                Openlight.style.display = 'block';
+            }
+        })*/
         document.addEventListener('keydown', (key) => {
             let lightBoxMedia = document.getElementById('works-lightbox-media');
             let lightBoxName = document.getElementById('works-lightbox-name');
-
+            // ouverture de la lightbox
+            /*if (key.code === "Enter" || key.code === "Entrer" || key.code === "Entr") {
+                let lightBox = document.getElementById('works-lightbox');
+                lightBox.style.display = 'block';
+            }*/
             // si l'utilisateur appuis sur echap ferme la modal
             if (key.code === "Escape" || key.code === "Esc"|| key.code === "Echape") {
                 let lightBox = document.getElementById('works-lightbox');
