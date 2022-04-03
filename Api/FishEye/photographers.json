@@ -724,8 +724,5 @@
             "price": 80,
             "photoName": "Connected Curves"
         }
-    ],
-        "scripts": {
-          "lint": "eslint ."
-        }
+    ]
 }

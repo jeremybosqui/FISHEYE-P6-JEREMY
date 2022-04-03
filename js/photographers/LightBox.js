@@ -17,24 +17,21 @@ export default class LightBox {
             this.currentIndex = index;
             let lightBox = document.getElementById('works-lightbox');
             lightBox.style.display = 'block';
+            /* non fonctionnel
+            lightBox.addEventListener('keydown', (e) => {
+                if(e.key === 'Enter') {
+                    lightBox.style.display = 'block';
+                }
+            })*/
             lightBoxMedia.innerHTML = `${src}`;
             lightBoxName.innerHTML = `${nameSrc}`;
-        }))
-        // fonctionne partiellement
-        /*
-        let lightBox = document.getElementById('works-lightbox');
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter') {
-                lightBox.style.display = 'block';
-            }
-        })*/
+        }));
         this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName);
         this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName);
         this.close();
         this.keyboard(currentMedia, currentMediaName);
-        return this
+        return this;
     }
-
     //  initier pour passer au media precedent au click sur la gauche
     previous(elt, media, name) {
         elt.addEventListener('click', () => {

@@ -42,7 +42,7 @@ export default class DropDownMenu {
         let sortBtn = Array.from(document.getElementsByClassName('sort')); // array.from() me permet de convertir ma NodeList en tableau
         // accessibilite clavier validation du filtre via la touche entrer
         sortBtn.forEach((btn, index) => btn.addEventListener('keydown', (e) => { // je creer un gestionnaire d'event click à chaque btn
-            if (e.key == 'Enter' || e.key == 'Entr' || e.key == 'Etr' || e.key == 'Entrer') {
+            if (e.key == 'Enter' || e.key == 'Entr' || e.key == 'Entrer') {
                 hiddenSort[0].style.display = "none";
                 if (index == 0) {
                     btnSort.innerHTML = `Popularité`;
