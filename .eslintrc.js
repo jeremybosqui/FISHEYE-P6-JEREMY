@@ -11,5 +11,8 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    eqeqeq: 'warn',
+    indent: ['warn', 2, { SwitchCase: 1 }],
+    'multiline-ternary': ['warn', 'always-multiline']
   }
 }
