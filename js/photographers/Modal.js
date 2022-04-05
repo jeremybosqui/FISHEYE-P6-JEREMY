@@ -30,7 +30,7 @@ export default class Modal {
       }
     })
   }
-  
+
   // lancer la modal
   launchModal () {
     const modalbg = document.getElementById('form-dialog')

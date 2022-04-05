@@ -17,15 +17,14 @@ export default class LightBox {
       this.currentIndex = index
       const lightBox = document.getElementById('works-lightbox')
       lightBox.style.display = 'block'
+      lightBoxMedia.innerHTML = `${src}`
+      lightBoxName.innerHTML = `${nameSrc}`
       /* non fonctionnel
             lightBox.addEventListener('keydown', (e) => {
                 if(e.key === 'Enter') {
                     lightBox.style.display = 'block';
                 }
             }) */
-      lightBoxMedia.innerHTML = `${src}`
-      lightBoxName.innerHTML = `${nameSrc}`
-      
     }))
     this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName)
     this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName)
@@ -83,7 +82,6 @@ export default class LightBox {
 
   // initialiser le coté accessible de la lightbox avec la navigation via les touches du clavier
   keyboard (currentMedia, currentMediaName) {
-
     document.addEventListener('keydown', (key) => {
       const lightBoxMedia = document.getElementById('works-lightbox-media')
       const lightBoxName = document.getElementById('works-lightbox-name')
