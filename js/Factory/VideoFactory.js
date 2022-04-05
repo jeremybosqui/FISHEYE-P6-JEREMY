@@ -6,6 +6,7 @@ export default class VideoFactory {
   createHTML (element) {
     const eltVideo = document.createElement('video')
     eltVideo.setAttribute('src', element.video)
+    eltVideo.controls = false
     eltVideo.setAttribute('role', 'button')
     eltVideo.className = 'ph-media'
 

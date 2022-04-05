@@ -37,6 +37,7 @@ export default class Modal {
     modalbg.style.display = 'block'
     const focusInput = document.querySelector('input')
     focusInput.focus()
+    console.log(focusInput)
   }
 
   // fermer la modal

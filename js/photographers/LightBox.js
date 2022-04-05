@@ -87,7 +87,7 @@ export default class LightBox {
       const lightBoxName = document.getElementById('works-lightbox-name')
       // ouverture de la lightbox
       /* if (key.code === "Enter" || key.code === "Entrer" || key.code === "Entr") {
-                let lightBox = document.getElementById('works-lightbox');
+                const lightBox = document.getElementById('works-lightbox');
                 lightBox.style.display = 'block';
             } */
       // si l'utilisateur appuis sur echap ferme la modal
