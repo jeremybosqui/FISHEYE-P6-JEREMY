@@ -27,7 +27,6 @@ export default class GalleryFactory {
                 </a>
                 <div class="ph-work-elt-text">
                     <h2 class="ph-work-title">${element.photoName}</h2>
-                    <span class="ph-work-price">${element.price} €</span>
                     <div class='ph-elt-like'>
                     <span class="ph-work-like">
                         <a class="like-counter">${element.likes}</a>

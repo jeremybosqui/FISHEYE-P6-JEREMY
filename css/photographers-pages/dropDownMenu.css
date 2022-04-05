@@ -2,6 +2,9 @@
 .works-sort {
     display: none;
 }
+/* .white-border {
+    border-bottom: 2px solid white;
+} */
 /*============= responsive desktop   ========*/
 @media (min-width: 900px) {
     .arrow-down-open {
@@ -15,7 +18,7 @@
         color: #fff;
         left: 8.5rem;
         position: absolute;
-        top: 1.55rem;
+        top: 0.55rem;
     }
 
     .hidden-sort li {
@@ -23,7 +26,7 @@
         color: #fff;
         font-size: 1.2rem;
         font-weight: 500;
-        padding: 1.25rem;
+        padding: 0.5rem;
     }
 
     .sort-btn {

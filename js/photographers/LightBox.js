@@ -25,6 +25,7 @@ export default class LightBox {
             }) */
       lightBoxMedia.innerHTML = `${src}`
       lightBoxName.innerHTML = `${nameSrc}`
+      
     }))
     this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName)
     this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName)
@@ -82,13 +83,7 @@ export default class LightBox {
 
   // initialiser le coté accessible de la lightbox avec la navigation via les touches du clavier
   keyboard (currentMedia, currentMediaName) {
-    // non fonctionnel
-    /* let Openlight = document.getElementById('works-lightbox');
-        Openlight.addEventListener('keydown', (b) => {
-            if(b.key === 'Enter') {
-                Openlight.style.display = 'block';
-            }
-        }) */
+
     document.addEventListener('keydown', (key) => {
       const lightBoxMedia = document.getElementById('works-lightbox-media')
       const lightBoxName = document.getElementById('works-lightbox-name')

@@ -20,8 +20,7 @@ export default class HomePageBuilder {
             <p class="location">${photographe.city}, ${photographe.country}</p>
             <p class="tagline">${photographe.tagline}</p>
             <p class="price">${photographe.price}€/jour</p>
-            <ul class="filter">${photographe.tags.map(tag =>
-    `<li class="li" data-filter="${tag}">#${tag}</li>`).join(' ')}</ul>` // utilisation de map et de join identique à précédemment
+            ` // utilisation de map et de join identique à précédemment
 
       sectionPhotographers.appendChild(articlePhotographers)
       articlePhotographers.innerHTML = templatePhotographer

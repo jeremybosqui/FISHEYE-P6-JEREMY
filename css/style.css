@@ -28,3 +28,6 @@ nav #ul .li:hover,
     text-decoration: none;
     transition: all .2s;
 }
+.no-scroll {
+    overflow: hidden;
+  }

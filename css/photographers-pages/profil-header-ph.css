@@ -33,8 +33,9 @@
 }
 
 .ph-profil button:hover {
-    background: #651414;
-    transform: scale(1.05);
+    background: #D3573C;
+    transform: scale(1.07);
+    color: black;
 }
 
 .ph-profil img {
