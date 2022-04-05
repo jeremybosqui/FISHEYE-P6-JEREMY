@@ -30,11 +30,13 @@ export default class Modal {
       }
     })
   }
-
+  
   // lancer la modal
   launchModal () {
     const modalbg = document.getElementById('form-dialog')
     modalbg.style.display = 'block'
+    const focusInput = document.querySelector('input')
+    focusInput.focus()
   }
 
   // fermer la modal
