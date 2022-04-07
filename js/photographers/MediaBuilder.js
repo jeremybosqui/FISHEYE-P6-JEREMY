@@ -11,6 +11,7 @@ export default class MediaBuilder {
     const gallery = new GalleryFactory().builder(media)
     this.boxLikesAndPrice(gallery.totalLike, data.photographers)
     new LikeSubscriber()
+    // ajout de la const qui permet de remove les controls quand on est sur la gallerie photographes mais qui l'affiche quand on click dessus car les controls sont initier dans la videofactory avec setattribute ('controls')
     const video = document.querySelector('video')
       function removeControls(video){
         video.removeAttribute('controls')
