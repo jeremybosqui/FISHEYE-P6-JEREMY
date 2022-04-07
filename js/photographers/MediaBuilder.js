@@ -11,6 +11,11 @@ export default class MediaBuilder {
     const gallery = new GalleryFactory().builder(media)
     this.boxLikesAndPrice(gallery.totalLike, data.photographers)
     new LikeSubscriber()
+    const video = document.querySelector('video')
+      function removeControls(video){
+        video.removeAttribute('controls')
+      }
+      window.onload = removeControls(video)
   }
 
   // mise en place de la box contenant le nombre total likes et le photographer's price

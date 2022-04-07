@@ -19,6 +19,8 @@ export default class LightBox {
       lightBox.style.display = 'block'
       lightBoxMedia.innerHTML = `${src}`
       lightBoxName.innerHTML = `${nameSrc}`
+      /* const controlTrue = document.querySelector('video')
+      controlTrue.controls = false*/
       /* non fonctionnel
             lightBox.addEventListener('keydown', (e) => {
                 if(e.key === 'Enter') {

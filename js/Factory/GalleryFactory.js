@@ -15,7 +15,7 @@ export default class GalleryFactory {
     const mediaFactory = new MediaFactory()
     const currentMedia = [] // initier un tableau vide
     const currentMediaName = [] // initier un tableau vide
-
+    
     dataMedia.forEach(element => {
       if (id == element.photographerId) { // creer la condition pour que l'ID soit bien egal à celui des photographers dans le ficher data.json
         const sectionPhWorks = document.getElementById('ph-works')
