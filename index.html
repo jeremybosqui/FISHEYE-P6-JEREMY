@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <title>Fisheye</title><link rel="shortcut icon" href="imgs/logo-fisheye.svg" type="image/x-icon">
   </head>
   <body>
-    <header>
-        <img src="assets/images/logo.png" class="logo" />
+    <a href="#main" class="direct-link-main">Passer au contenu</a>
+    <header class="header">
+        <a class="header__logo" href="index.html">
+            <img 
+            src="imgs/logo-fisheye.svg" 
+            alt="FishEye Home page">
+        </a>
         <h1>Nos photographes</h1>
     </header>
-    <main id="main">
-        <div class="photographer_section"></div>
+    <main id="main" class="main">
+        <section id="photographers-list" class="photographers-list">
+            <!-- Injection de l'élément généré avec JavaScript ici  -->
+            <p id="no-photographer" class="no-photographer"></p>
+        </section>
     </main>
   </body>
 </html>

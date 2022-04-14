@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Fisheye - photographe </title><link rel="shortcut icon" href="imgs/logo-fisheye.svg" type="image/x-icon">
   </head>
   <body>
-    <header>
-      <img src="assets/images/logo.png" class="logo" />
+   <header class="header">
+        <a class="header__logo" href="index.html">
+            <img src="imgs/logo-fisheye.svg" alt="FishEye Home page">
+        </a>
     </header>
-    <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-      </div>
+
+    <main class="main">
+        <section id="photographer-profil">
+            <!-- Injection JavaScript ici -->
+        </section>
+
+        <div id="sort">
+            <!-- Injection JavaScript ici -->
+        </div> 
+
+        <section id="gallery" class="gallery">
+            <!-- Injection JavaScript ici -->
+        </section>
+
     </main>
-    <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
-        </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
-			</div>
-		</div>
-    <script src="/scripts/utils/contactForm.js"></script>
+
+    <aside id="card-infos">
+        <!-- Injection JavaScript ici -->
+    </aside>
+      <!--mise en place de la lightbox contenant les images-->
+    <aside id="modal-lightbox" class="lightbox" tabindex="0" aria-label="Vue rapproché"></aside>
+    <!--mise en place du formulaire de contact / du bouton click qui ouvre la modal-->
+    <aside id="modal-form" class="form-contact" tabindex="0" aria-label="Modal de contact" >
+        <div class="form-contact__container">
+            <h1 id="form-name" class="form-name">Contactez-moi<br></h1>
+            <form id="contact-form" class="form" tabindex="0" aria-label="formulaire de contact">
+                <div class="form__item">
+                    <label for="first-name">Prénom</label>
+                    <input type="text" class="text-control" id="first-name" name="first-name">
+                </div>
+                <div class="form__item">
+                    <label for="last-name">Nom</label>
+                    <input type="text" class="text-control" id="last-name" name="last-name">
+                </div>
+                <div class="form__item">
+                    <label for="email">Email</label>
+                    <input type="email" class="text-control" id="email" name="email">
+                </div>
+                <div class="form__item">
+                    <label for="message">Votre message</label>
+                    <textarea class="text-control" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" id="submitForm" class="btn btn-submit">Envoyer</button>
+            </form>
+            <button id="closeModal" class="close" aria-label="fermer le formulaire">
+            </button>
+        </div>
+    </aside>
   </body>
 </html>
