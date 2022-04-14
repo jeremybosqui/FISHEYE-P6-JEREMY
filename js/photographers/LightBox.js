@@ -7,33 +7,7 @@ export default class LightBox {
   }
 
   // initialiser la lightbox + initialiser les functions et appel de celles-ci pour naviguer dans la lightbox
-  init (currentMedia, currentMediaName) {
-    const getMedias = Array.from(document.getElementsByClassName('ph-media'))
-    getMedias.forEach((mediaWorks, index) => mediaWorks.addEventListener('click', () => {
-      const lightBoxMedia = document.getElementById('works-lightbox-media')
-      const lightBoxName = document.getElementById('works-lightbox-name')
-      const src = currentMedia[index]
-      const nameSrc = currentMediaName[index]
-      this.currentIndex = index
-      const lightBox = document.getElementById('works-lightbox')
-      lightBox.style.display = 'block'
-      lightBoxMedia.innerHTML = `${src}`
-      lightBoxName.innerHTML = `${nameSrc}`
-      /* const controlTrue = document.querySelector('video')
-      controlTrue.controls = false*/
-      /* non fonctionnel
-            lightBox.addEventListener('keydown', (e) => {
-                if(e.key === 'Enter') {
-                    lightBox.style.display = 'block';
-                }
-            }) */
-    }))
-    this.previous(document.querySelector('.left-arrow-lightbox'), currentMedia, currentMediaName)
-    this.next(document.querySelector('.right-arrow-lightbox'), currentMedia, currentMediaName)
-    this.close()
-    this.keyboard(currentMedia, currentMediaName)
-    return this
-  }
+ 
 
   //  initier pour passer au media precedent au click sur la gauche
   previous (elt, media, name) {
