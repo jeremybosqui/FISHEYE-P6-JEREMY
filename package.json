@@ -1,0 +1,22 @@
+{
+  "name": "fisheye-p6-jeremy",
+  "version": "1.0.0",
+  "description": "projet Fisheye avec API developper en JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremybosqui/FISHEYE-P6-JEREMY.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremybosqui/FISHEYE-P6-JEREMY/issues"
+  },
+  "homepage": "https://github.com/jeremybosqui/FISHEYE-P6-JEREMY#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0"
+  }
+}
