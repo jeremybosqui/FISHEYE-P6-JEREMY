@@ -3,14 +3,14 @@
 // --------------------------------------------------
 
 .tag-list{
-    display: inline-flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
     gap: 6px 5px;
 }
 
 .tag-item{
-    display: inline-block;
+    display: none;
     border: 1px solid #C4C4C4;
     border-radius: 11px;
     font-size: 0.75rem;
@@ -18,7 +18,7 @@
 
 
     a{
-        display: block;
+        display: none;
         padding: 2px 7px;
 
         text-transform: capitalize;
