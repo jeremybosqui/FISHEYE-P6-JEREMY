@@ -21,13 +21,13 @@
     }
 
     &:hover{
-        background-color: $lightRed;
+        background-color: lighten($red, 10%);
         color: $black;
     }
 
 
     @media screen and (min-width: 950px){
-        min-height: 69px;
+        min-height: 50px;
         font-size: 1.25rem;
     }
 }

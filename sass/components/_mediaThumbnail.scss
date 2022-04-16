@@ -57,8 +57,9 @@
         justify-content: space-between;
         color: $red;
 
-        &__title{ font-size: 0.875rem; }
+        &__title{ font-size: 1.1rem; }
 
+        &__likes-nb {font-size: 18px;}
         &__likes-icon{
             margin-left: 5px;
             cursor: pointer;

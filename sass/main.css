@@ -219,14 +219,14 @@ body.no-scroll {
 }
 .photographer-thumbnail .photographer__infos__city {
   color: #901C1C;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .photographer-thumbnail .photographer__infos__tagline {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 .photographer-thumbnail .photographer__infos__price {
   color: #757575;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 
 .photographer-profil {
@@ -237,8 +237,7 @@ body.no-scroll {
 .photographer-profil .photographer__infos {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 5px;
+  gap: 20px;
   max-width: 400px;
 }
 .photographer-profil .photographer__infos__name {
@@ -299,6 +298,8 @@ body.no-scroll {
     place-self: start;
     position: static;
     transform: translate3d(0, 0, 0);
+    margin-left: 50px;
+    margin-top: 50px;
   }
   .photographer-profil .photographer__img {
     width: 200px;
@@ -323,12 +324,12 @@ body.no-scroll {
   width: 170px;
 }
 .btn:hover {
-  background-color: #DB8876;
+  background-color: #bb2424;
   color: #000;
 }
 @media screen and (min-width: 950px) {
   .btn {
-    min-height: 69px;
+    min-height: 50px;
     font-size: 1.25rem;
   }
 }
@@ -446,7 +447,10 @@ body.no-scroll {
   color: #901C1C;
 }
 .media__infos__title {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
+}
+.media__infos__likes-nb {
+  font-size: 18px;
 }
 .media__infos__likes-icon {
   margin-left: 5px;
@@ -462,7 +466,7 @@ body.no-scroll {
     right: 35px;
     background-color: #DB8876;
     border-radius: 5px 5px 0 0;
-    padding: 20px 30px;
+    padding: 10px 30px;
     font-size: 1.5rem;
     font-weight: 500;
   }

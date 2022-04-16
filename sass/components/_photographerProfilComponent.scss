@@ -10,8 +10,7 @@
     .photographer__infos{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        gap: 5px;
+        gap: 20px;
         max-width: 400px;
         &__name{ font-size: 2.25rem; color: $orange; }
         &__city{ font-size: 0.8rem; color: $red; }
@@ -55,6 +54,8 @@
             place-self: start;
             position: static;
             transform: translate3d(0,0,0);
+            margin-left: 50px;
+            margin-top: 50px;
         }
 
         .photographer__img{
