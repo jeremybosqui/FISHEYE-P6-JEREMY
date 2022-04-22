@@ -1,7 +1,7 @@
 import Error from './Error.js'
 
 /**
- * Cette classe simule une api, elle devra être modifier une fois l'api créer
+ * Cette classe simule une api
  */
 export default class Api {
 
@@ -45,7 +45,7 @@ export default class Api {
     }
 
     /**
-     * Cette fonction récupère tout les tags de tout les photographes
+     * Cette fonction récupère tous les tags de tous les photographes
      * @returns {array}
      */
     static getAllTags = () => {
@@ -65,7 +65,7 @@ export default class Api {
     }
 
     /**
-     * Cette fonction récupère tout les médias d'un photographe
+     * Cette fonction récupère tous les médias d'un photographe
      * @param {number} id 
      * @returns 
      */
