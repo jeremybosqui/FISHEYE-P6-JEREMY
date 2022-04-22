@@ -54,6 +54,7 @@ export default class Photographer {
         <div class="photographer__infos">
             <p class="photographer__infos__city">${this.city}, ${this.country}</p>
             <p class="photographer__infos__tagline">${this.tagline}</p>
+            <p class="photographer__infos__price">${this.price}€/jour</p>
         </div>`
 
         let tagsList = document.createElement('ul')
