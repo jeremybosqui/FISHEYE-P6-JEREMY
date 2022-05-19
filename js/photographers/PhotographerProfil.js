@@ -1,7 +1,7 @@
 'use strict'
 /* ============== */
 /* eslint eqeqeq: "off" */
-import Modal from './Modal.js'
+import Modal from './Modal_Contact.js'
 import Form from './Form.js'
 
 export default class PhotographerProfil {

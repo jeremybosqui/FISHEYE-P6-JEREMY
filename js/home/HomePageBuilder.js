@@ -1,11 +1,10 @@
 'use strict'
 /* =================== */
-import Filter from './FilterTags.js'
 import Scroll from './Scroll.js'
 
 // display tous les photographes par defaut
 export default class HomePageBuilder {
-  // initier la photographer section creation des elements, appel des fonctions 'filtertags' et 'passer au contenu'
+  // initier la photographer section creation des elements, appel  fonction 'passer au contenu'
   displayPhotographers (data) {
     const photographers = data.photographers
     photographers.map(photographe => { // eslint-disable-line 
@@ -25,7 +24,7 @@ export default class HomePageBuilder {
       sectionPhotographers.appendChild(articlePhotographers)
       articlePhotographers.innerHTML = templatePhotographer
     })
-    new Filter().filterTags()
+    new Filter()
     new Scroll().scrollButton()
   }
 }

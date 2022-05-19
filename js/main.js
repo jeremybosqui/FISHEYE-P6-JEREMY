@@ -6,7 +6,7 @@ import ApiFishEye from './provider/ApiFishEye.js'
 import HomePageBuilder from './home/HomePageBuilder.js'
 // photographer pages folder photographers
 import PhotographerProfil from './photographers/PhotographerProfil.js'
-import DropDownMenu from './photographers/DropDownSort.js'
+import DropDownMenu from './photographers/Drop_Down_Menu.js'
 import MediaBuilder from './photographers/MediaBuilder.js';
 
 (function appDispatch () {
