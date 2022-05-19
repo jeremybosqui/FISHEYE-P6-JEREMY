@@ -51,21 +51,6 @@
     margin: 0;
 }
 
-.ph-tags {
-    border: .5px solid #C4C4C4;
-    border-radius: .6875rem;
-    color: #901C1C;
-    font-size: 12px;
-    margin: 0;
-    padding: .0625rem .375rem;
-    text-decoration: none;
-    transition: all .2s;
-}
-
-.ph-tags:hover {
-    background-color: #901C1C;
-    color: #fff;
-}
 /*======== responsive desktop ajustement du bouton  ===========*/
 @media (max-width: 1200px) {
     .ph-profil button {
