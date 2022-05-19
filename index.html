@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FishEye</title>
+    <title>FishEye - Accueil</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <script type="module" src="js/main.js"></script> <!-- utilisation du type=module car j'utlise des fichiers import et export , le type module prend en charge les mot-cles import et export je dois donc indiquer au navigateur que le script doit etre traité comme un module -->
 
-    <link rel="stylesheet" href="sass/main.css">
-    <script src="js/index.js" type="module"></script>
 </head>
+
 <body>
-    <a href="#main" class="direct-link-main">Passer au contenu</a>
-    <header class="header">
-        <a class="header__logo" href="index.html">
-            <img src="imgs/logo-fisheye.svg" alt="FishEye Home page">
-        </a>
-        <nav id="categories" class="categories-list">
-            <ul id="tags" class="tag-list" aria-label="tags">
-                <!-- Injection de l'élément généré avec JavaScript ici -->
-            </ul>
-        </nav>
-        <h1>Nos photographes</h1>
-    </header>
-    <main id="main" class="main">
-        <div id="photographers-list" class="photographers-list">
-            <!-- Injection de l'élément généré avec JavaScript ici  -->
-            <p id="no-photographer" class="no-photographer">Aucun photographe ne correspond à vos filtres</p>
-        </div>
+    <!-- mise en place de la banner -->
+    <header>
+        <a href="index.html" title="HomePage"><img
+                src="https://res.cloudinary.com/dlpyn3wxf/image/upload/v1614078430/logo_mig5no.png"
+                alt="FishEye Home Page"></a>
+        <!-- mise en place de la nav contenant les filtres tags -->
+        
+        <h1 aria-label="title">Nos Photographes</h1>
+    </header> 
+    <main>
+        <!-- mise en place du bouton passer au contenu -->
+        <a id="main-photographers-link" href="#photographers" aria-label="photographers-link">Passer au contenu</a>
+        <!-- section des photographers -->
+        <section id="photographers" aria-label="photographers">
+        </section>
     </main>
+
 </body>
+
 </html>

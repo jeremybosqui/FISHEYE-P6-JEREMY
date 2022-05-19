@@ -1,22 +1,13 @@
 # FISHEYE-P6-JEREMY
-Projet Fisheye avec API developper en JS
+projet Fisheye avec API developper en JS
 
-#TECHNOLOGIES
+Rien à installer il suffit de lancer le projet via le répo forker
 
-> SASS pour une meilleure gestion du style et un code clair
-> 
-> HTML / CSS
-> 
-> Javascript sans aucune librairie afin de respecter les consignes du projet
-> 
-> EsLint afin de vérifier la solidité du code et sa viabilité
 
-#START PROJET
 
-> Le projet à été débuté le 23 fevrier
+# Technologies 
 
-#ACCESSIBILITY
+Langages utilisés ⏩ CSS / JS / HTML 
 
-> Le projet à été axé sur l'accessibilité du site afin de pouvoir naviguer sans difficulté avec les touches du clavier
-> 
-> Les touches entrée et échape on été paramétré afin de rendre cela possible
+# Lien vers le projet 
+🖱 https://jeremybosqui.github.io/FISHEYE-P6-JEREMY/

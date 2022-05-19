@@ -1,7 +1,7 @@
 {
   "name": "fisheye-p6-jeremy",
   "version": "1.0.0",
-  "description": "project6",
+  "description": "projet Fisheye avec API developper en JS",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --max-warnings=0 ."
@@ -10,13 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/jeremybosqui/FISHEYE-P6-JEREMY.git"
   },
-  "author": "jeremy bosqui",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeremybosqui/FISHEYE-P6-JEREMY/issues"
   },
   "homepage": "https://github.com/jeremybosqui/FISHEYE-P6-JEREMY#readme",
   "devDependencies": {
-    "eslint": "^8.13.0"
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
   }
 }
